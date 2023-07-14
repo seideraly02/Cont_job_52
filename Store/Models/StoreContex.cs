@@ -5,9 +5,9 @@ namespace Store.Models
 {
     public class StoreContext : DbContext
     {
-        public DbSet<Store> Phones { get; set; }
-       
-        
+        public DbSet<Categories> Categories { get; set; }
+        public DbSet<Store> Stores { get; set; }
+
         public StoreContext(DbContextOptions<StoreContext> options)
             : base(options){} 
         
